@@ -4,25 +4,36 @@
 
 .container {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top     : 0;
+    bottom  : 0;
+    left    : 0;
+    right   : 0;
 }
 
 mat-sidenav {
     width: 250px;
+
+    @media (max-width: 767px) {
+        width     : 100%;
+        bottom    : auto !important;
+        top       : 56px;
+        box-shadow: none !important;
+
+    }
 }
 
 mat-toolbar {
     position: fixed;
-    img{
+
+    img {
         height: 100%;
     }
+
     .btn_menu {
         background-color: orange;
-        border: 0px;
-        padding-top: 5px;
+        border          : 0px;
+        padding-top     : 5px;
+
         mat-icon {
             color: #fff;
         }
@@ -34,7 +45,7 @@ mat-toolbar {
 }
 
 ::ng-deep .mat-expansion-panel-body {
-    padding: 0px !important;
+    padding     : 0px !important;
     padding-left: 10px !important;
 }
 
@@ -43,12 +54,12 @@ mat-toolbar {
 }
 
 .bottom-to-top {
-    border: 0px;
+    border      : 0px;
     border-right: 1px;
     border-style: solid;
     border-image: linear-gradient(to top, #c1c1c1, rgba(0, 0, 0, 0)) 1 100%;
 }
 
-.content {
-    margin-top: 56px;
+::ng-deep .mat-drawer-backdrop.mat-drawer-shown {
+    background-color: transparent !important;
 }

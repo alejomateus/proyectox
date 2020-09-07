@@ -4,18 +4,21 @@ html,
 body {
     height: 100%;
 }
+
 body {
-    margin: 0;
+    margin     : 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
 section {
-    height: 100vh;
+    height               : 100vh;
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: ("assets/background/promo-august.jpg");
+    background-position  : center;
+    background-repeat    : no-repeat;
+    background-size      : cover;
+    background-image     : ("assets/background/promo-august.jpg");
 }
+
 .animate,
 .hover-bounce,
 .hover-flash,
@@ -34,27 +37,74 @@ section {
 .hover-wave,
 .hover-wobble,
 .trigger {
-    opacity: 0;
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    -ms-animation-duration: 1s;
-    -o-animation-duration: 1s;
-    animation-duration: 1s;
+    opacity                    : 0;
+    -webkit-animation-duration : 1s;
+    -moz-animation-duration    : 1s;
+    -ms-animation-duration     : 1s;
+    -o-animation-duration      : 1s;
+    animation-duration         : 1s;
     -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-fill-mode: both;
+    -moz-animation-fill-mode   : both;
+    -ms-animation-fill-mode    : both;
+    -o-animation-fill-mode     : both;
+    animation-fill-mode        : both;
 }
+
 .animate.zoomInUp {
     -webkit-animation-name: zoomInUp;
-    -moz-animation-name: zoomInUp;
-    -ms-animation-name: zoomInUp;
-    -o-animation-name: zoomInUp;
-    animation-name: zoomInUp;
+    -moz-animation-name   : zoomInUp;
+    -ms-animation-name    : zoomInUp;
+    -o-animation-name     : zoomInUp;
+    animation-name        : zoomInUp;
 }
-@media only screen and (max-width: 479px) h1 {
-    font-size: 60px;
-    line-height: 54px;
-    letter-spacing: 2px;
+
+@media only screen and (max-width: 479px) {
+    h1 {
+        font-size     : 60px;
+        line-height   : 54px;
+        letter-spacing: 2px;
+    }
+}
+
+.animated {
+    -webkit-animation-duration : var(--animate-duration);
+    animation-duration         : var(--animate-duration);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode        : both;
+}
+
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity          : 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform        : translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity          : 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform        : translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity          : 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform        : translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity          : 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform        : translate3d(0, 0, 0);
+    }
+}
+
+.aparece {
+    @media (max-width: 767px) {
+        -webkit-animation-name: fadeInDown;
+        animation-name        : fadeInDown;
+    }
+
 }

@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "proyectox"
+  "defaultProject": "proyectox",
+  "cli": {
+    "analytics": false
+  }
 }

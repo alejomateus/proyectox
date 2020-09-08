@@ -23,12 +23,14 @@
         <img src="https://sanalexfit.com/wp-content/uploads/2020/07/COACH.jpg">
           <span class="spacer"></span>
           <button mat-icon-button (click)="sidenav.toggle()" *ngIf="!opened" class="btn_menu">
-              <mat-icon>menu</mat-icon>
+              <mat-icon class="icon-menu-fine">menu</mat-icon>
           </button>
       </mat-toolbar>
       <div class="content" [ngStyle]="{'margin-top': opened ? '0px': '56px'}">
           <router-outlet></router-outlet>
       </div>
+      <app-footer></app-footer>
+
   </mat-sidenav-content>
 
 </mat-sidenav-container>

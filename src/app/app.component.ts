@@ -18,7 +18,7 @@ export class AppComponent implements OnDestroy {
     this.watcher = mediaObserver.media$.subscribe((change: MediaChange) => {
       if (change.mqAlias === 'sm' || change.mqAlias === 'xs') {
         this.opened = false;
-        this.over = 'over';
+        this.over = 'push';
       } else {
         this.opened = true;
         this.over = 'side';

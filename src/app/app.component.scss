@@ -27,9 +27,11 @@ mat-toolbar {
     }
 
     .btn_menu {
-        background-color: orange;
+        background-color: #f46106;
         border          : 0px;
         padding-top     : 5px;
+        outline         : none;
+        border-radius   : 3px;
 
         mat-icon {
             color: #fff;
@@ -64,4 +66,9 @@ mat-toolbar {
 .menu-main {
     list-style : none;
     line-height: 44px;
+    padding    : 0;
+}
+
+.mat-toolbar {
+    background-color: white;
 }

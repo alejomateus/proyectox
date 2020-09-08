@@ -27,12 +27,12 @@ export class AppComponent implements OnDestroy {
       }
     });
   }
-  statusMenu() {
+  statusMenu(): void {
     this.visibleMenu =
       this.visibleMenu === 'fadeInDown' ? 'fadeOutUp' : 'fadeInDown';
   }
 
-  hidesMenu() {
+  hidesMenu(): void {
     console.log('this.visibleMenu', this.visibleMenu);
 
     if (this.visibleMenu) {
@@ -40,7 +40,7 @@ export class AppComponent implements OnDestroy {
     }
   }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     this.watcher.unsubscribe();
   }
 }

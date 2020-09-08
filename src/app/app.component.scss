@@ -14,16 +14,13 @@ mat-sidenav {
     width: 250px;
 
     @media (max-width: 767px) {
-        width     : 100%;
-        bottom    : auto !important;
-        top       : 56px;
-        box-shadow: none !important;
-
+        display: none;
     }
 }
 
 mat-toolbar {
     position: fixed;
+    z-index : 2;
 
     img {
         height: 100%;
@@ -62,4 +59,9 @@ mat-toolbar {
 
 ::ng-deep .mat-drawer-backdrop.mat-drawer-shown {
     background-color: transparent !important;
+}
+
+.menu-main {
+    list-style : none;
+    line-height: 44px;
 }

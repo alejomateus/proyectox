@@ -8,6 +8,7 @@ import { MediaObserver, MediaChange } from '@angular/flex-layout';
 })
 export class AppComponent implements OnDestroy {
   opened = true;
+  visibleMenu: string;
   vista: boolean;
   over = 'side';
   expandHeight = '42px';
@@ -19,14 +20,24 @@ export class AppComponent implements OnDestroy {
     this.watcher = mediaObserver.media$.subscribe((change: MediaChange) => {
       if (change.mqAlias === 'sm' || change.mqAlias === 'xs') {
         this.opened = false;
-        this.vista = true;
         this.over = 'over';
       } else {
         this.opened = true;
-        this.vista = false;
         this.over = 'side';
       }
     });
+  }
+  statusMenu() {
+    this.visibleMenu =
+      this.visibleMenu === 'fadeInDown' ? 'fadeOutUp' : 'fadeInDown';
+  }
+
+  hidesMenu() {
+    console.log('this.visibleMenu', this.visibleMenu);
+
+    if (this.visibleMenu) {
+      this.visibleMenu = 'fadeOutUp';
+    }
   }
 
   ngOnDestroy() {

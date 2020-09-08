@@ -1,5 +1,5 @@
 <mat-sidenav-container class="container">
-    <mat-sidenav #sidenav [(mode)]="over" [(opened)]="opened" class="bottom-to-top animated aparece">
+    <mat-sidenav *ngIf="opened" #sidenav [mode]="over" [opened]="opened" class="bottom-to-top">
         <div class="my-2" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
             <div class="with-bg"></div>
             <div>
@@ -19,14 +19,25 @@
     </mat-sidenav>
 
     <mat-sidenav-content>
-        <mat-toolbar color="white" *ngIf="vista">
+        <mat-toolbar color="white" *ngIf="!opened">
             <img src="https://sanalexfit.com/wp-content/uploads/2020/07/COACH.jpg">
             <span class="spacer"></span>
-            <button mat-icon-button (click)="sidenav.toggle()" class="btn_menu">
+            <button mat-icon-button class="btn_menu" (click)="statusMenu()">
                 <mat-icon>menu</mat-icon>
             </button>
         </mat-toolbar>
-        <div class="content">
+        <div class="menu" *ngIf="!opened" [class]="visibleMenu">
+            <ul id="menu-menu" class="menu-main">
+                <li><a><span>INICIO</span></a></li>
+                <li><a><span>RETOS</span></a></li>
+                <li><a><span>PRECIOS</span></a></li>
+                <li><a><span>RETOS CUMPLIDOS</span></a></li>
+                <li><a><span>GALERIA</span></a></li>
+                <li><a><span>CONTACTO</span></a></li>
+                <li><a><span>REGISTRATE</span></a></li>
+            </ul>
+        </div>
+        <div class="content" (click)="hidesMenu()">
             <router-outlet></router-outlet>
         </div>
     </mat-sidenav-content>

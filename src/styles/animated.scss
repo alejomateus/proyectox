@@ -33,14 +33,6 @@
     }
 }
 
-
-.fadeInDown {
-    @extend %animated;
-    display               : inline-block;
-    -webkit-animation-name: fadeInDown;
-    animation-name        : fadeInDown;
-}
-
 @-webkit-keyframes fadeOutUp {
     from {
         opacity: 1;
@@ -63,11 +55,4 @@
         -webkit-transform: translate3d(0, -100%, 0);
         transform        : translate3d(0, -100%, 0);
     }
-}
-
-.fadeOutUp {
-    @extend %animated;
-    display               : inline-block;
-    -webkit-animation-name: fadeOutUp;
-    animation-name        : fadeOutUp;
 }

@@ -7,3 +7,55 @@ section {
     background-size      : cover;
     min-height           : 497px;
 }
+
+.gym-h1 {
+    font-family   : Exo2-BoldItalic;
+    color         : white;
+    line-height   : 47px;
+    letter-spacing: 2px;
+    font-size     : 2.938rem;
+
+    @media (min-width: 767px) {
+        font-size  : 100px;
+        line-height: 90px;
+
+    }
+}
+
+.gym-h2 {
+    font-family: Exo2-SemiBold;
+    color      : white;
+    font-size  : 24px;
+
+    @media (min-width: 767px) {
+        font-size  : 40px;
+        line-height: 60px;
+
+    }
+}
+
+.section_wrapper {
+    padding-top   : 205px;
+    padding-bottom: 51.5px;
+    width         : 80%;
+    margin        : 0 auto;
+}
+
+.button_label {
+    padding: 15px 30px;
+}
+
+
+.gym-call-to-action {
+    justify-content: center;
+    display        : flex;
+    align-items    : center;
+    border         : 2px solid white;
+    color          : white;
+    width          : 167px;
+    font-family    : Exo2-ExtraLight;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}

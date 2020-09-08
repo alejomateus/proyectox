@@ -11,12 +11,21 @@ import { AbroadRatesComponent } from './components/abroad-rates/abroad-rates.com
 import { ChallengesMetComponent } from './components/challenges-met/challenges-met.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
-  declarations: [DashboardComponent, GoalsComponent, MonthPromoComponent, BenefitsComponent, ChallengesComponent, ColombiaRatesComponent, AbroadRatesComponent, ChallengesMetComponent, GalleryComponent, ContactComponent],
-  imports: [
-    CommonModule,
-    DashboarRoutingModule
-  ]
+  declarations: [
+    DashboardComponent,
+    GoalsComponent,
+    MonthPromoComponent,
+    BenefitsComponent,
+    ChallengesComponent,
+    ColombiaRatesComponent,
+    AbroadRatesComponent,
+    ChallengesMetComponent,
+    GalleryComponent,
+    ContactComponent,
+  ],
+  imports: [CommonModule, DashboarRoutingModule, MatIconModule],
 })
-export class DashboardModule { }
+export class DashboardModule {}

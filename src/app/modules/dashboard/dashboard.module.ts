@@ -13,7 +13,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -32,6 +32,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     DashboarRoutingModule,
     MatIconModule,
     FlexLayoutModule,
+    MatProgressSpinnerModule,
   ],
 })
 export class DashboardModule {}

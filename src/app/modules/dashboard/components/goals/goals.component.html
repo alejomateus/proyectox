@@ -11,8 +11,15 @@
                     </div>
                 </div>
                 <div class="gym-rectangle">
-                    <div class="circle">
+                    <div class="uploader-status">
+                        <mat-progress-spinner class="track" [mode]="mode" value="100" diameter="140">
+                        </mat-progress-spinner>
+                        <p class="gym-percent">{{value*0.01 | percent}}</p>
+                        <mat-progress-spinner class="circle" [mode]="mode" [value]="value" diameter="140">
+                        </mat-progress-spinner>
                     </div>
+                    <!-- <div class="circle">
+                    </div> -->
                     <p>Los resultados dependen de ti ¿Lo hacemos juntos?</p>
                 </div>
             </div>

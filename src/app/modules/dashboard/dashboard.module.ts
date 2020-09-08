@@ -12,6 +12,7 @@ import { ChallengesMetComponent } from './components/challenges-met/challenges-m
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { MatIconModule } from '@angular/material/icon';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,11 @@ import { MatIconModule } from '@angular/material/icon';
     GalleryComponent,
     ContactComponent,
   ],
-  imports: [CommonModule, DashboarRoutingModule, MatIconModule],
+  imports: [
+    CommonModule,
+    DashboarRoutingModule,
+    MatIconModule,
+    FlexLayoutModule,
+  ],
 })
 export class DashboardModule {}

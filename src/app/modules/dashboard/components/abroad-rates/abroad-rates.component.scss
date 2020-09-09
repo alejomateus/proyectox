@@ -1,10 +1,156 @@
 section {
     padding              : 0px;
-    background-color: #265ba9;
+    background-color     : #265ba9;
     background-image     : url('/assets/abroad-rates/personal-trainer-price-bg.png');
     background-repeat    : no-repeat;
     background-position  : center top;
     background-attachment: scroll;
     background-size      : cover;
-    min-height           : 497px;
+    height               : auto;
+}
+
+.challenges-h2 {
+    font-family   : Exo2-Medium;
+    color         : #122b52;
+    font-size     : 24px;
+    line-height   : 24px;
+    letter-spacing: 0px;
+
+    .themecolor {
+        color: #F3610B;
+    }
+
+    @media (min-width: 767px) {
+        font-size     : 40px;
+        line-height   : 40px;
+        font-weight   : 600;
+        letter-spacing: 0px;
+    }
+}
+
+.gym-container {
+    padding-top   : 162px;
+    padding-bottom: 142px;
+    max-width     : 1220px;
+    margin        : 0 auto;
+    padding-left  : 33px;
+    padding-right : 33px;
+}
+
+.abroad-card {
+    width          : auto;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    padding        : 40px;
+    text-align     : center;
+
+    @media (min-width: 960px) {
+        width: 100%;
+    }
+
+    &.one {
+        .challenges-h2 {
+            color: white;
+        }
+
+        .title-h3 {
+            color: #7CA9E6;
+        }
+
+        background-color: rgb(49, 100, 177);
+
+        p {
+            &.days {
+                color      : #7CA9E6;
+                font-family: Exo2-SemiBoldItalic;
+            }
+
+            &.plan-text {
+                color      : white;
+                font-family: Exo2-SemiBold;
+            }
+        }
+
+        hr.line {
+            width : 100%;
+            border: 1px solid #7ca8e673;
+        }
+    }
+
+    &.tow {
+
+        .title-h3,
+        .challenges-h2 {
+            color: #122b52;
+        }
+
+        margin-top      : -30px;
+        background-color: white;
+
+        hr.line {
+            width : 100%;
+            border: 1px solid rgb(50 100 177 / 35%);
+        }
+
+        p {
+            &.days {
+                color      : #122b52;
+                font-family: Exo2-SemiBoldItalic;
+            }
+
+            &.plan-text {
+                color      : #6b6b6b;
+                font-family: Exo2-SemiBold;
+            }
+        }
+    }
+}
+
+.title-h3 {
+    font-family   : Exo2-SemiBoldItalic;
+    font-size     : 25px;
+    line-height   : 25px;
+    font-weight   : 700;
+    letter-spacing: 0px;
+}
+
+hr.line {
+    width : 100%;
+    border: 1px solid rgb(255 247 247 / 13%);
+}
+
+.button_label {
+    padding: 11px 20px;
+}
+
+a.btn {
+    cursor : pointer;
+    outline: none;
+    width  : fit-content;
+    margin : 35px auto;
+
+    &.one {
+        border: 1px solid rgb(187, 185, 185);
+        color : white;
+
+        &:hover {
+            background-color: #3b5d92;
+        }
+    }
+
+    &.two {
+        border: 1px solid #f46106;
+        color : #f46106;
+
+        &:hover {
+            background-color: #f4610630;
+            color           : white;
+        }
+    }
+}
+
+.img-epayco {
+    margin-top: 30px;
+    object-fit: contain;
 }

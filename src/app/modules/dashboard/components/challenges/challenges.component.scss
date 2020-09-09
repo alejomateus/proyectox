@@ -6,4 +6,66 @@ section {
     background-attachment: scroll;
     background-size      : cover;
     min-height           : 497px;
+    height               : auto;
+}
+
+.gym-container {
+    padding-top   : 162px;
+    padding-bottom: 142px;
+    max-width     : 1220px;
+    margin        : 0 auto;
+    padding-left  : 33px;
+    padding-right : 33px;
+}
+
+.challenges-h2 {
+    font-family   : Exo2-Medium;
+    color         : white;
+    font-size     : 24px;
+    line-height   : 24px;
+    letter-spacing: 0px;
+
+    .themecolor {
+        color: #F3610B;
+    }
+
+    @media (min-width: 767px) {
+        font-size     : 40px;
+        line-height   : 40px;
+        font-weight   : 600;
+        letter-spacing: 0px;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+.card-image {
+    position: relative;
+    cursor  : pointer;
+
+    &:hover {
+        .challenges-more {
+            background-color  : #F3610B;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition   : all .3s ease-in-out;
+            -o-transition     : all .3s ease-in-out;
+            transition        : all .3s ease-in-out;
+        }
+    }
+
+    .challenges-more {
+        font-family: Exo2-Regular;
+        color      : white;
+        width      : 100%;
+        position   : absolute;
+        bottom     : 5px;
+        margin     : 0;
+        font-size  : 30px;
+        line-height: 30px;
+        padding    : 27px 0;
+        text-align : center;
+
+    }
 }

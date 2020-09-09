@@ -1,9 +1,88 @@
 section {
-    padding: 0px;
-    background-image: url("/assets/challenges-met/personal-trainer-change-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center top;
+    padding              : 0px;
+    background-image     : url("/assets/challenges-met/personal-trainer-change-bg.jpg");
+    background-repeat    : no-repeat;
+    background-position  : center top;
     background-attachment: scroll;
-    background-size: cover;
-    min-height: 497px;
+    background-size      : cover;
+    height               : auto;
+}
+
+img {
+    width     : 100%;
+    object-fit: contain;
+}
+
+.gym-container {
+    padding-top   : 110px;
+    padding-bottom: 142px;
+    max-width     : 1220px;
+    margin        : 0 auto;
+    padding-left  : 33px;
+    padding-right : 33px;
+}
+
+.gym-h4 {
+
+    font-family: Exo2-SemiBoldItalic;
+    color      : white;
+
+    @media (min-width: 767px) {
+        font-size     : 32px;
+        line-height   : 45px;
+        font-weight   : 600;
+        letter-spacing: 0px;
+    }
+}
+
+.gym-h6 {
+    color         : white;
+    font-family   : Exo2-SemiBold;
+    margin-top    : 40px;
+    margin-bottom : 15px;
+    font-size     : 13px;
+    line-height   : 19px;
+    letter-spacing: 0px;
+
+    @media (min-width: 767px) {
+        font-size     : 20px;
+        line-height   : 20px;
+        font-weight   : 700;
+        letter-spacing: 0px;
+    }
+
+}
+
+p.themecolor {
+    margin   : 0 5px 0;
+    font-size: 13px;
+
+    @media (min-width: 767px) {
+        font-size: 14px;
+    }
+
+}
+
+.themecolor {
+    font-family  : Exo2-Light;
+    color        : #f46106;
+    margin-bottom: 20px;
+}
+
+.text-chllenges {
+    font-family: Exo2-ExtraLight;
+    color      : #6e7989;
+    font-size  : 13px;
+
+    @media (min-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+.contenedor {
+    padding: 20px 0px 0px 0px;
+
+    @media (min-width: 767px) {
+        padding: 0px 0px 0px 50px;
+    }
 }

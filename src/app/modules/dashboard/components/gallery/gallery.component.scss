@@ -1,10 +1,26 @@
-
 section {
-    padding: 0px;
-    background-color:  #152d50;
-    background-repeat: no-repeat;
-    background-position: center top;
+    padding              : 0px;
+    background-color     : #152d50;
+    background-repeat    : no-repeat;
+    background-position  : center top;
     background-attachment: scroll;
-    background-size: cover;
-    min-height: 497px;
+    background-size      : cover;
+    height               : auto;
+}
+
+img {
+    width: 100%;
+}
+
+.conter-image {
+    width: 100%;
+
+    @media (min-width: 767px) {
+        width: 25%;
+    }
+}
+
+
+.gym-container {
+    max-width: 1220px;
 }

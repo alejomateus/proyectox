@@ -151,6 +151,15 @@ a.btn {
 }
 
 .img-epayco {
-    margin-top: 30px;
-    object-fit: contain;
+    margin-top    : 30px;
+    object-fit    : contain;
+    padding-bottom: 4px;
+    cursor        : pointer;
+
+    &:hover {
+        background   : #f46106;
+        border-radius: 4px;
+        width        : fit-content;
+        transition   : all .3s;
+    }
 }

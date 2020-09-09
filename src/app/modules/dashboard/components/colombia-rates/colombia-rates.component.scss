@@ -1,10 +1,20 @@
-section {
-    padding: 0px;
-    background-color: #dd9933;
-    background-image: url("/assets/abroad-rates/personal-trainer-price-bg.png");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-attachment: scroll;
-    background-size: cover;
-    min-height: 497px;
+:host {
+    section {
+        padding              : 0px;
+        background-color     : #dd9933;
+        background-image     : url("/assets/abroad-rates/personal-trainer-price-bg.png");
+        background-repeat    : no-repeat;
+        background-position  : center top;
+        background-attachment: scroll;
+        background-size      : cover;
+        height               : auto;
+    }
+
+    .subtitle {
+        color: white;
+    }
+
+    .line {
+        margin: 20px;
+    }
 }

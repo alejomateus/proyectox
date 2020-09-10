@@ -14,6 +14,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { IvyGalleryModule } from 'angular-gallery';
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -33,6 +34,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatIconModule,
     FlexLayoutModule,
     MatProgressSpinnerModule,
+    IvyGalleryModule,
   ],
 })
 export class DashboardModule {}

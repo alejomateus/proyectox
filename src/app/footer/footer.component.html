@@ -1,17 +1,15 @@
 <footer>
-    <div class="row">
-        <div class="col-sm-6 col-md-8 col-lg-8 col-xs-12 "  fxLayoutAlign="center center">
+    <div class="gmy-footer">
+        <div class="text-footer">
             <span>
                 Todos los Derechos © 2020 | Sanalexfit. Diseño Web por: Marcahost.com.co </span>
         </div>
-        <div class="col-sm-6 col-md-2 col-lg-2 col-xs-12"  fxLayoutAlign="center center">
+        <div class="container-icon">
             <fa-icon [icon]="faWhatsapp"></fa-icon>
             <fa-icon [icon]="faInstagram"></fa-icon>
-
         </div>
-        <div class="col-sm-6 col-md-2 col-lg-2 col-xs-12 "  fxLayoutAlign="center center">
-            <i class="far fa-caret-square-up"></i>
-            
+        <div class="scroll-up" (click)="scrollToElement()">
+            <fa-icon [icon]="faUps"></fa-icon>
         </div>
     </div>
 </footer>

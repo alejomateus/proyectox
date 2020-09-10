@@ -4,20 +4,23 @@ import { dashboardRootRoute } from './modules/dashboard/dashboard-routing.module
 
 const routes: Routes = [
   {
-    path:'',
+    path: '',
     redirectTo: dashboardRootRoute,
     pathMatch: 'full',
   },
   {
     path: 'dashboard',
     loadChildren: () =>
-      import('./modules/dashboard/dashboard.module').then(m => m.DashboardModule)
+      import('./modules/dashboard/dashboard.module').then(
+        (m) => m.DashboardModule
+      ),
   },
-  
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' }),
+  ],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

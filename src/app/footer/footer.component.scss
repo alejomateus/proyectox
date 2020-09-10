@@ -1,5 +1,51 @@
 footer {
-    padding: 30px;
-    color: #424861;
+    padding         : 30px;
+    color           : #424861;
     background-color: #020812;
+}
+
+.scroll-up {
+    border-radius: 4px;
+    border       : 1.5px solid white;
+    padding      : 10px 15px;
+    font-size    : 25px;
+    color        : #F3610B;
+    cursor       : pointer;
+}
+
+.gmy-footer {
+    display        : flex;
+    flex-direction : column-reverse;
+    align-items    : center;
+    justify-content: center;
+
+    .text-footer {
+        text-align: center;
+    }
+
+    .container-icon {
+        margin-left: 0;
+        margin-top : 10px;
+    }
+
+    .container-icon fa-icon:first-child {
+        margin-right: 10px;
+    }
+
+    @media (min-width: 767px) {
+        flex-direction : row;
+        justify-content: space-between;
+
+        .text-footer {
+            text-align: left;
+        }
+
+        .container-icon {
+            margin-left: auto;
+        }
+
+        .scroll-up {
+            margin-left: 15px;
+        }
+    }
 }

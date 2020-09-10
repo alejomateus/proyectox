@@ -78,6 +78,10 @@ section {
     color           : #6a7585
 }
 
+.no_line {
+    border: 0px;
+}
+
 .fadeInDown {
     @extend %animated;
     display               : inline-block;
@@ -103,6 +107,12 @@ section {
     animation-timing-function        : ease-in-out;
 }
 
-.no_line {
-    border: 0px;
+
+.rubberBand {
+    -webkit-animation-duration: 3s;
+    animation-duration        : 3s;
+    -webkit-animation-duration: 3s;
+    animation-duration        : 3s;
+    -webkit-animation-name    : rubberBand;
+    animation-name            : rubberBand;
 }

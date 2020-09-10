@@ -9,6 +9,7 @@ export class DashboardComponent implements OnInit {
   constructor(private scrollDispatcher: ScrollDispatcher) {
     this.scrollDispatcher.scrolled().subscribe((x) => {
       this.initVista();
+      this.initVista2();
     });
   }
 
@@ -24,9 +25,21 @@ export class DashboardComponent implements OnInit {
     ) {
       const prueba = document.getElementById('tituloPrueba');
       prueba.classList.add('eartBeat');
-      console.log('Esta en pantalla anadir fadeIN');
-    } else {
-      console.log('NO SE VE no hace una verga');
+    }
+  }
+  initVista2(): void {
+    const bounding = document
+      .getElementById('app-benefits')
+      .getBoundingClientRect();
+    if (
+      bounding.top <
+      (window.innerHeight || document.documentElement.clientHeight)
+    ) {
+      const prueba = document.querySelectorAll('div.card-benefits');
+      console.log('prueba', prueba);
+      prueba.forEach((item) => {
+        item.classList.add('rubberBand');
+      });
     }
   }
 }

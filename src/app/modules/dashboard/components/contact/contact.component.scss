@@ -66,5 +66,11 @@ section {
 }
 
 ::ng-deep .mat-form-field-empty.mat-form-field-label {
-    color: #F3610B;
+    color: white;
+}
+
+
+.mat-themcolor {
+    color : #F3610B;
+    border: 1px solid #F3610B;
 }

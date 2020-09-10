@@ -17,6 +17,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { IvyGalleryModule } from 'angular-gallery';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -39,6 +40,7 @@ import { MatButtonModule } from '@angular/material/button';
     IvyGalleryModule,
     MatInputModule,
     MatButtonModule,
+    ScrollingModule,
   ],
 })
 export class DashboardModule {}

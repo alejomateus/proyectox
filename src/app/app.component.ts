@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, AfterViewInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { MediaObserver, MediaChange } from '@angular/flex-layout';
 import { Router } from '@angular/router';

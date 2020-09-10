@@ -17,8 +17,6 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {}
 
   scrollToElement($element?): void {
-    console.log('scroll');
-
     let top = document.getElementById('promo');
     if (top !== null) {
       top.scrollIntoView({ behavior: 'smooth' });

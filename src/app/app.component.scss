@@ -20,7 +20,7 @@ mat-sidenav {
 
 mat-toolbar {
     position: fixed;
-    z-index : 2;
+    z-index : 9999999999;
 
     img {
         height: 100%;
@@ -71,4 +71,26 @@ mat-toolbar {
 
 .mat-toolbar {
     background-color: white;
+}
+
+ul#menu-menu {
+    font-family: Exo2-SemiBold;
+    width      : 100%;
+
+    li {
+        width        : 100%;
+        text-align   : center;
+        cursor       : pointer;
+        border-bottom: 1px solid #dcdcdc96;
+
+        a {
+            text-decoration: none;
+            color          : #6A7684;
+        }
+    }
+
+}
+
+.active {
+    color: #f46106 !important;
 }

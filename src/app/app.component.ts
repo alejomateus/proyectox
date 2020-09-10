@@ -1,6 +1,8 @@
 import { Component, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { MediaObserver, MediaChange } from '@angular/flex-layout';
+import { Router } from '@angular/router';
+import { faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -15,8 +17,10 @@ export class AppComponent implements OnDestroy {
   collapseHeight = '42px';
   displayMode = 'flat';
   watcher: Subscription;
+  faWhatsapp = faWhatsapp;
+  faInstagram = faInstagram;
 
-  constructor(mediaObserver: MediaObserver) {
+  constructor(mediaObserver: MediaObserver, private router: Router) {
     this.watcher = mediaObserver.media$.subscribe((change: MediaChange) => {
       if (change.mqAlias === 'sm' || change.mqAlias === 'xs') {
         this.opened = false;
@@ -42,5 +46,18 @@ export class AppComponent implements OnDestroy {
 
   ngOnDestroy(): void {
     this.watcher.unsubscribe();
+  }
+
+  scrollToElement(element, itemMenu?): void {
+    let top = document.getElementById(element);
+    const items = document.querySelectorAll('.item-menu');
+    items.forEach((item) => {
+      item.classList.remove('active');
+    });
+    itemMenu.classList.add('active');
+    if (top !== null) {
+      top.scrollIntoView({ behavior: 'smooth' });
+      top = null;
+    }
   }
 }

@@ -4,17 +4,32 @@
             <div class="with-bg"></div>
             <div>
                 <a>
-                    <img src="assets/logo.jpg" width="100">
+                    <img src="assets/logo.jpg" style="max-height: 250px; width: auto;">
                 </a>
             </div>
         </div>
 
-        <div class="mt-3" fxLayoutAlign="center center">
-            <mat-nav-list>
-                <a mat-list-item class="ml-2" style="font-size:15px;" href="#promo">
-                    Homepage
-                </a>
-            </mat-nav-list>
+        <div class="mt-3" fxLayout="column" fxLayoutAlign="center center">
+            <ul id="menu-menu" class="menu-main">
+                <li (click)="scrollToElement('app-month-promo',a)"><a #a
+                        class="item-menu active"><span>INICIO</span></a></li>
+                <li (click)="scrollToElement('app-goals',b)"><a #b class="item-menu"><span>SOBRE MÍ</span></a></li>
+                <li (click)="scrollToElement('app-challenges',c)"><a #c class="item-menu"><span>RETOS</span></a></li>
+                <li (click)="scrollToElement('app-abroad-rates', d)"><a #d class="item-menu"><span>PRECIOS</span></a>
+                </li>
+                <li (click)="scrollToElement('app-challenges-met',e)"><a #e class="item-menu"><span>RETOS
+                            CUMPLIDOS</span></a>
+                </li>
+                <li (click)="scrollToElement('app-gallery',f)"><a #f class="item-menu"><span>GALERIA</span></a></li>
+                <li (click)="scrollToElement('app-contact',g)">
+                    <a #g class="item-menu"><span>CONTACTO</span></a></li>
+                <li><a><span>REGISTRATE</span></a>
+                </li>
+                <li style="border: none; color: #F3610B;">
+                    <fa-icon style="margin-right:  15px;" [icon]="faWhatsapp"></fa-icon>
+                    <fa-icon [icon]="faInstagram"></fa-icon>
+                </li>
+            </ul>
         </div>
     </mat-sidenav>
 
@@ -27,13 +42,16 @@
             </button>
         </mat-toolbar>
         <div class="menu" *ngIf="!opened" [class]="visibleMenu">
-            <ul id="menu-menu" class="menu-main">
-                <li><a><span>INICIO</span></a></li>
-                <li><a><span>RETOS</span></a></li>
-                <li><a><span>PRECIOS</span></a></li>
-                <li><a><span>RETOS CUMPLIDOS</span></a></li>
-                <li><a><span>GALERIA</span></a></li>
-                <li><a><span>CONTACTO</span></a></li>
+            <ul class="menu-main">
+                <li (click)="scrollToElement('app-month-promo',a)"><a #a
+                        class="item-menu active"><span>INICIO</span></a></li>
+                <li (click)="scrollToElement('app-goals',b)"><a #b class="item-menu"><span>RETOS</span></a></li>
+                <li (click)="scrollToElement('app-challenges',c)"><a #c class="item-menu"><span>PRECIOS</span></a>
+                </li>
+                <li (click)="scrollToElement('app-challenges',d)"><a #d class="item-menu"><span>RETOS
+                            CUMPLIDOS</span></a></li>
+                <li (click)="scrollToElement('app-gallery',e)"><a #e class="item-menu"><span>GALERIA</span></a></li>
+                <li (click)="scrollToElement('app-contact',f)"><a #f class="item-menu"><span>CONTACTO</span></a></li>
                 <li><a><span>REGISTRATE</span></a></li>
             </ul>
         </div>

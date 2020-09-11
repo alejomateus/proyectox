@@ -129,6 +129,7 @@ a.btn {
     outline: none;
     width  : fit-content;
     margin : 35px auto;
+    display: flex;
 
     &.one {
         border: 1px solid rgb(187, 185, 185);

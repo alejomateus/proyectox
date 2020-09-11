@@ -116,3 +116,57 @@ section {
     -webkit-animation-name    : rubberBand;
     animation-name            : rubberBand;
 }
+
+.zoomIn {
+    -webkit-animation-duration: 3.5s;
+    animation-duration        : 3.5s;
+    -webkit-animation-duration: 3.5s;
+    animation-duration        : 3.5s;
+    -webkit-animation-name    : zoomIn;
+    animation-name            : zoomIn;
+}
+
+.fadeInUpBig {
+    -webkit-animation-duration: 1.5s;
+    animation-duration        : 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-duration        : 1.5s;
+    -webkit-animation-name    : fadeInUpBig;
+    animation-name            : fadeInUpBig;
+}
+
+.fadeInDownBig {
+    -webkit-animation-duration: 1.5s;
+    animation-duration        : 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-duration        : 1.5s;
+    -webkit-animation-name    : fadeInDownBig;
+    animation-name            : fadeInDownBig;
+}
+
+.fadeInTopRight {
+    -webkit-animation-duration: 2s;
+    animation-duration        : 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration        : 2s;
+    -webkit-animation-name    : fadeInTopRight;
+    animation-name            : fadeInTopRight;
+}
+
+.fadeInBottomLeft {
+    -webkit-animation-duration: 2s;
+    animation-duration        : 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration        : 2s;
+    -webkit-animation-name    : fadeInBottomLeft;
+    animation-name            : fadeInBottomLeft;
+}
+
+.zoomInDown {
+    -webkit-animation-duration: 1.5s;
+    animation-duration        : 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-duration        : 1.5s;
+    -webkit-animation-name    : zoomInDown;
+    animation-name            : zoomInDown;
+}
